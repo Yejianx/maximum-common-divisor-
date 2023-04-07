@@ -7,9 +7,9 @@ int main()
 	int num1 = 17;
 	int num2 = 15;
 
-	int mcd;
+	int mcd= 1;
 
-	while (1)
+	while (mcd == 0)
 	{
 		if (num1 > num2)
 		{
@@ -25,14 +25,6 @@ int main()
 			num1 = mcd;
 		}
 
-		if (mcd == 0)
-		{
-		
-			printf("最大公约数为%d",(num1<num2)?num2:num1 );
-		
-			break;
-			
-		}
-		
 	}
+	printf("最大公约数为%d", (num1 < num2) ? num2 : num1);
 }
